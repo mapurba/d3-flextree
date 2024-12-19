@@ -15,7 +15,7 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: 20
-      - run: build:prod
+      - run: nom run build:prod
 
   publish-gpr:
     needs: build
